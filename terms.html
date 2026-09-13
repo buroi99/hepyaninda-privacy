@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hep Yanında Kullanım Şartları</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
+  :root {
+    --bg: #FFFDF7;
+    --bg-raised: #FFFFFF;
+    --ink: #1F2420;
+    --ink-soft: #5B6158;
+    --border: #E4E1D6;
+    --accent: #2E6F5E;
+    --accent-soft: #E7EFE9;
+    --accent-ink: #1F4E42;
+    --warn: #A6541F;
+    --warn-soft: #F5E9DD;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141815;
+      --bg-raised: #1B2119;
+      --ink: #ECEAE1;
+      --ink-soft: #A7AFA5;
+      --border: #2C332C;
+      --accent: #6FBFA3;
+      --accent-soft: #1E2B24;
+      --accent-ink: #9BDAC0;
+      --warn: #E0A876;
+      --warn-soft: #2E2013;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141815;
+    --bg-raised: #1B2119;
+    --ink: #ECEAE1;
+    --ink-soft: #A7AFA5;
+    --border: #2C332C;
+    --accent: #6FBFA3;
+    --accent-soft: #1E2B24;
+    --accent-ink: #9BDAC0;
+    --warn: #E0A876;
+    --warn-soft: #2E2013;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Source Sans 3', -apple-system, 'Segoe UI', sans-serif;
+    line-height: 1.65;
+  }
+
+  .page { max-width: 700px; margin: 0 auto; padding: 56px 24px 96px; }
+
+  header.doc-header { margin-bottom: 48px; }
+  .eyebrow {
+    font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--accent-ink); margin: 0 0 10px;
+  }
+  h1 {
+    font-family: 'Fraunces', Georgia, serif; font-weight: 500;
+    font-size: clamp(32px, 5vw, 44px); line-height: 1.12; margin: 0 0 14px;
+    color: var(--ink); text-wrap: balance;
+  }
+  .subtitle { font-size: 17px; color: var(--ink-soft); max-width: 54ch; margin: 0 0 18px; }
+  .meta-row {
+    display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; color: var(--ink-soft);
+    border-top: 1px solid var(--border); padding-top: 16px;
+  }
+  .meta-row strong { color: var(--ink); font-weight: 600; }
+
+  section.article { padding: 30px 0; border-top: 1px solid var(--border); }
+  section.article:first-of-type { border-top: none; padding-top: 0; }
+
+  .article-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 14px; }
+  .article-num {
+    font-family: 'Fraunces', Georgia, serif; font-size: 15px; font-weight: 600;
+    color: var(--accent); background: var(--accent-soft); border-radius: 999px;
+    width: 30px; height: 30px; min-width: 30px; display: flex; align-items: center; justify-content: center;
+  }
+  h2 { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 22px; margin: 0; color: var(--ink); }
+
+  .article-body { max-width: 62ch; }
+  .article-body p { margin: 0 0 14px; color: var(--ink); }
+  .article-body p:last-child { margin-bottom: 0; }
+  .article-body ul { margin: 0 0 14px; padding-left: 20px; }
+  .article-body li { margin-bottom: 8px; }
+  .article-body li:last-child { margin-bottom: 0; }
+
+  .callout {
+    background: var(--warn-soft);
+    border: 1px solid var(--warn);
+    border-radius: 14px;
+    padding: 16px 18px;
+    font-size: 15px;
+    color: var(--ink);
+    margin: 0 0 14px;
+  }
+  .callout strong { color: var(--warn); }
+
+  .contact-card {
+    margin-top: 44px; background: var(--bg-raised); border: 1px solid var(--border);
+    border-radius: 18px; padding: 26px 28px; display: flex; flex-direction: column; gap: 4px;
+  }
+  .contact-card .label { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; }
+  .contact-card a { color: var(--accent-ink); font-weight: 600; text-decoration: none; }
+  .contact-card a:hover { text-decoration: underline; }
+
+  footer.doc-footer { margin-top: 40px; font-size: 13px; color: var(--ink-soft); }
+  .home-link { display: inline-block; margin-top: 18px; font-size: 14px; color: var(--accent-ink); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="doc-header">
+    <p class="eyebrow">Hep Yanında &middot; Kullanım Şartları</p>
+    <h1>Uygulamayı kullanırken bilmeniz gerekenler</h1>
+    <p class="subtitle">
+      Hep Yanında'yı kullanarak aşağıdaki şartları kabul etmiş olursunuz.
+      Basit ve dürüst tutmaya çalıştık — hukuki jargon yerine gerçekte ne
+      anlama geldiğini anlatıyoruz.
+    </p>
+    <div class="meta-row">
+      <span><strong>Yürürlük tarihi:</strong> 13 Eylül 2026</span>
+      <span><strong>İletişim:</strong> hepyaninda.destek@gmail.com</span>
+    </div>
+  </header>
+
+  <section class="article">
+    <div class="article-head">
+      <span class="article-num">1</span>
+      <h2>Hep Yanında nedir?</h2>
+    </div>
+    <div class="article-body">
+      <p>
+        Hep Yanında, yaşlı bir aile büyüğünün günlük durumunu takip etmeye
+        yardımcı olan, tamamen ücretsiz bir mobil uygulamadır. Günlük
+        check-in, iki aşamalı SOS, düşme algılama, ilaç hatırlatma ve
+        aile içi fotoğraf/ses mesajı paylaşımı gibi özellikler sunar.
+      </p>
+    </div>
+  </section>
+
+  <section class="article">
+    <div class="article-head">
+      <span class="article-num">2</span>
+      <h2>Önemli sınırlamalar — dürüstçe okuyun</h2>
+    </div>
+    <div class="article-body">
+      <div class="callout">
+        <strong>Hep Yanında bir acil durum servisi değildir</strong> ve
+        112'nin veya profesyonel bir sağlık/güvenlik hizmetinin yerini
+        tutmaz. Gerçek bir acil durumda her zaman önce 112'yi arayın.
+      </div>
+      <p>
+        Düşme algılama yalnızca telefon cepte, belde veya elde taşınırken
+        ve uygulama açıkken güvenilirdir; telefon çantada, masada veya
+        uygulama kapalıyken çalışmayabilir. SOS ve check-in bildirimleri
+        internet/push bildirim altyapısına bağlıdır — nadiren gecikebilir
+        veya iletilemeyebilir. Bu sınırlamaları kabul ederek uygulamayı
+        kullanırsınız.
+      </p>
+    </div>
+  </section>
+
+  <section class="article">
+    <div class="article-head">
+      <span class="article-num">3</span>
+      <h2>Hesap ve kullanım kuralları</h2>
+    </div>
+    <div class="article-body">
+      <ul>
+        <li>Hesap oluştururken gerçek ad ve iletişim bilgisi vermelisiniz — acil durumlarda doğru kişiye ulaşılabilmesi için bu önemlidir.</li>
+        <li>Hesabınızın güvenliğinden (şifrenizi kimseyle paylaşmamak) siz sorumlusunuz.</li>
+        <li>Uygulamayı başkasına zarar verecek, yanıltıcı veya kötüye kullanım amacıyla kullanamazsınız.</li>
+        <li>Uygulama içinden istediğiniz zaman "Hesabımı sil" ile hesabınızı ve verilerinizi kalıcı olarak silebilirsiniz.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="article">
+    <div class="article-head">
+      <span class="article-num">4</span>
+      <h2>Ücretsizlik</h2>
+    </div>
+    <div class="article-body">
+      <p>
+        Hep Yanında'nın hiçbir özelliği için ücret alınmaz; reklam,
+        premium katman veya uygulama içi satın alma yoktur ve gelecekte
+        de olması planlanmamaktadır.
+      </p>
+    </div>
+  </section>
+
+  <section class="article">
+    <div class="article-head">
+      <span class="article-num">5</span>
+      <h2>Sorumluluk sınırı</h2>
+    </div>
+    <div class="article-body">
+      <p>
+        Uygulama "olduğu gibi" sunulur, kesintisiz veya hatasız
+        çalışacağına dair bir garanti verilmez. Yasaların izin verdiği
+        azami ölçüde, uygulamanın kullanımından veya kullanılamamasından
+        doğabilecek zararlardan sorumluluk kabul edilmez. Bu, özellikle
+        yukarıda (madde 2) anlatılan düşme algılama ve bildirim
+        sınırlamaları için geçerlidir.
+      </p>
+    </div>
+  </section>
+
+  <section class="article">
+    <div class="article-head">
+      <span class="article-num">6</span>
+      <h2>Gizlilik</h2>
+    </div>
+    <div class="article-body">
+      <p>
+        Verilerinizin nasıl toplandığı ve kullanıldığı ayrı bir
+        <a href="./index.html">Gizlilik Politikası</a>'nda anlatılır — bu
+        şartların ayrılmaz bir parçasıdır.
+      </p>
+    </div>
+  </section>
+
+  <section class="article">
+    <div class="article-head">
+      <span class="article-num">7</span>
+      <h2>Değişiklikler</h2>
+    </div>
+    <div class="article-body">
+      <p>
+        Bu şartlar zaman zaman güncellenebilir. Önemli bir değişiklik
+        olduğunda yürürlük tarihi yukarıda güncellenir.
+      </p>
+    </div>
+  </section>
+
+  <div class="contact-card">
+    <span class="label">Sorularınız için</span>
+    <a href="mailto:hepyaninda.destek@gmail.com">hepyaninda.destek@gmail.com</a>
+  </div>
+
+  <a class="home-link" href="./index.html">← Gizlilik Politikası'na dön</a>
+
+  <footer class="doc-footer">
+    Hep Yanında &mdash; tamamen ücretsiz, reklamsız bir yaşlı bakım uygulaması.
+  </footer>
+</div>
+</body>
+</html>
